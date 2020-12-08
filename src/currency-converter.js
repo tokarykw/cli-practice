@@ -142,4 +142,4 @@ console.log('The result is:', result);
 
 // This message should also include the original amount and currency information
 // supplied by the user.
-//vconsole.log(`Successfully converted ${amount} ${initialCurrency} into ${result) ${targetCurrency}.`);
+console.log(`Successfully converted ${amount} ${initialCurrency} into ${result} ${targetCurrency}.`);
