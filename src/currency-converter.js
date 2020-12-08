@@ -121,17 +121,17 @@ console.log('The following currencies are valid:', initialCurrency, targetCurren
 // Now we will compute the rate, apply it to the amount, and capture the result.
 //function getRate(rates, initialCurrency, targetCurrency)
 //{
-//    return rates[initialCurrency][targetCurrency];
-//}
+   // return rates[initialCurrency][targetCurrency];
+////}
 //module.exports = {
- //   getrate,
+//    getrate,
 //};
 
-//var rate = rates[initialCurrency][targetCurrency];
-//console.log('The rate is:', rate);
+var rate = rates[initialCurrency][targetCurrency];
+console.log('The rate is:', rate);
 
-//var result = amount * rate;
-//console.log('The result is:', result);
+var result = amount * rate;
+console.log('The result is:', result);
 
 
 
