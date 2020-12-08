@@ -10,6 +10,7 @@
 
  
 var { validateUserInput } = require('./validate-user-input');
+var { getRate } = require('./get-rate');
 
 //The above code exports and imports files from other locations
 
@@ -121,15 +122,13 @@ if (rates[initialCurrency] !== undefined && rates[initialCurrency][targetCurrenc
 // information, and that a rate exists for each of the currencies.
 // got rid of console.logs
 // Now we will compute the rate, apply it to the amount, and capture the result.
-//function getRate(rates, initialCurrency, targetCurrency)
-//{
-   // return rates[initialCurrency][targetCurrency];
-////}
+
+
 //module.exports = {
 //    getrate,
 //};
 
-var rate = rates[initialCurrency][targetCurrency];
+var rate = getRate(rates, initialCurrency, targetCurrency);
 //console.log('The rate is:', rate);
 
 var result = amount * rate;
