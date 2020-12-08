@@ -10,15 +10,15 @@
 // file. In this case we've defined the function and the corresponding test in the
 // same file for illustrative and learning purposes.
 
-function myCoolFunction() {
-  return 'Wow, what a cool function';
-}
+//function myCoolFunction() {
+//  return 'Wow, what a cool function';
+//}
 
-//var { get rate } = required('..get-rate');
-//describe('getRate()', function(){
-//test('should return the correct rate when the rates, initial currency, adn target currency are valid', function(
-//})
-  {
+var { getRate } = require('../src/get-rate');
+
+describe('getRate()', function() {
+
+  test('should return the correct rate when the rates, initial currency, and target currency are valid', function() {
     var rates = {
       USD: {
         CAD: 2,
@@ -26,20 +26,22 @@ function myCoolFunction() {
     };
     var initialCurrency = 'USD';
     var targetCurrency = 'CAD';
+
     var rate = getRate(rates, initialCurrency, targetCurrency);
-    expect(rate).toBe();
-      }
-    }
-  }
-))
 
-
-describe('myCoolFunction()', function(){
-
-  test('should return the message: "Wow, what a cool function"', function() {
-    const result = myCoolFunction();
-
-    expect(result).toBe('Wow, what a cool function');
+    expect(rate).toBe(2);
   });
 
 });
+
+
+
+//describe('myCoolFunction()', function() {
+
+  //test('should return the message: "Wow, what a cool function"', function() {
+    //const result = myCoolFunction();
+
+    //expect(result).toBe('Wow, what a cool function');
+  //});
+
+//});
