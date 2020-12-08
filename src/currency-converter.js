@@ -9,8 +9,7 @@
 // valid finished product.
 
  
-// var { validateUserInput } = require('./validate-user-input');
-// var ?
+var { validateUserInput } = require('./validate-user-input');
 
 //The above code exports and imports files from other locations
 
@@ -43,13 +42,16 @@ var targetCurrency = process.argv[4]; //This should contain the third input
 // If any of the required information is missing, display a meaningful message
 // and exit the program.
 
-//function validateUserInput(amount, initialCurrency, targetCurrency) {
+function validateUserInput() { //(amount, initialCurrency, targetCurrency) {
 if (amount === undefined || initialCurrency === undefined || targetCurrency === undefined) {
     console.log('Whoops, you did not provide the amount, initial currency, or target currency.');
     process.exit();
+    }
 }
 
-//function validateUserInput() {
+//function 
+validateUserInput(amount, initialCurrency, targetCurrency); 
+//
     //if (amount === undefined || initialCurrency === undefined || targetCurrency === undefined) {
         //console.log('Whoops, you did not provide the amount, initial currency, or target currency.');
         //process.exit();
