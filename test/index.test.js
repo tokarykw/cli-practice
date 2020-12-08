@@ -14,10 +14,32 @@ function myCoolFunction() {
   return 'Wow, what a cool function';
 }
 
-describe('myCoolFunction()', () => {
-  test('should return the message: "Wow, what a cool function"', () => {
+//var { get rate } = required('..get-rate');
+//describe('getRate()', function(){
+//test('should return the correct rate when the rates, initial currency, adn target currency are valid', function(
+//})
+  {
+    var rates = {
+      USD: {
+        CAD: 2,
+      },
+    };
+    var initialCurrency = 'USD';
+    var targetCurrency = 'CAD';
+    var rate = getRate(rates, initialCurrency, targetCurrency);
+    expect(rate).toBe();
+      }
+    }
+  }
+))
+
+
+describe('myCoolFunction()', function(){
+
+  test('should return the message: "Wow, what a cool function"', function() {
     const result = myCoolFunction();
 
     expect(result).toBe('Wow, what a cool function');
   });
+
 });
