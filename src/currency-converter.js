@@ -31,9 +31,9 @@ var amount = process.argv[2] //This should contain the first input
 var initialCurrency = process.argv[3]; //This should contain the second input
 var targetCurrency = process.argv[4]; //This should contain the third input
 
-console.log('The amount is:', amount);
-console.log('The initialCurrency is:', initialCurrency);
-console.log('The targetCurrency is:', targetCurrency);
+//console.log('The amount is:', amount);
+//console.log('The initialCurrency is:', initialCurrency);
+//console.log('The targetCurrency is:', targetCurrency);
 
 // --------------------------------------------------
 // Step 2: Validate user input
@@ -88,8 +88,8 @@ var rates = {
   },
 };
 
-console.log(rates);
-console.log(rates[initialCurrency]);
+//console.log(rates);
+//console.log(rates[initialCurrency]);
 //console.log(rates[initialCurrency][targetCurrency]);
 
 // --------------------------------------------------
@@ -106,11 +106,11 @@ if (rates[initialCurrency] === undefined) {
 }
 
 if (rates[initialCurrency] !== undefined && rates[initialCurrency][targetCurrency] === undefined) {
-    console.log('Whoops, either the initial or target currency is invalid.', targetCurrency);
+    console.log('Whoops, target currency is invalid.', targetCurrency);
     process.exit();
 }
 
-console.log('The following currencies are valid:', initialCurrency, targetCurrency);
+//console.log('The following currencies are valid:', initialCurrency, targetCurrency);
 
 // --------------------------------------------------
 // Step 5: Perform conversion
@@ -128,10 +128,10 @@ console.log('The following currencies are valid:', initialCurrency, targetCurren
 //};
 
 var rate = rates[initialCurrency][targetCurrency];
-console.log('The rate is:', rate);
+//console.log('The rate is:', rate);
 
 var result = amount * rate;
-console.log('The result is:', result);
+//console.log('The result is:', result);
 
 
 
