@@ -90,7 +90,7 @@ var rates = {
 
 console.log(rates);
 console.log(rates[initialCurrency]);
-console.log(rates[initialCurrency][targetCurrency]);
+//console.log(rates[initialCurrency][targetCurrency]);
 
 // --------------------------------------------------
 // Step 4: Ensure that a conversion rate exists
@@ -100,17 +100,17 @@ console.log(rates[initialCurrency][targetCurrency]);
 
 // If the user supplies an invalid initial or target currency, display a meaningful
 // warning message and exit the program.
-//if (rates[initialCurrency] === undefined) {
-//    console.log('Whoops, the initial currency is invalid.', initialCurrency);
-//    process.exit();
-//}
+if (rates[initialCurrency] === undefined) {
+    console.log('Whoops, the initial currency is invalid.', initialCurrency);
+    process.exit();
+}
 
-//if (rates[initialCurrency] !== undefined && rates[initialCurrency][targetCurrency] === undefined) {
- //   console.log('Whoops, either the initial or target currency is invalid.', targetCurrency);
- //   process.exit();
-//}
+if (rates[initialCurrency] !== undefined && rates[initialCurrency][targetCurrency] === undefined) {
+    console.log('Whoops, either the initial or target currency is invalid.', targetCurrency);
+    process.exit();
+}
 
-//console.log('The following currencies are valid:', initialCurrency, targetCurrency);
+console.log('The following currencies are valid:', initialCurrency, targetCurrency);
 
 // --------------------------------------------------
 // Step 5: Perform conversion
