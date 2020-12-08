@@ -117,7 +117,7 @@ if (rates[initialCurrency] !== undefined && rates[initialCurrency][targetCurrenc
 // --------------------------------------------------
 // At this point we've confirmed that the user has supplied all of the necessary
 // information, and that a rate exists for each of the currencies.
-
+// got rid of console.logs
 // Now we will compute the rate, apply it to the amount, and capture the result.
 //function getRate(rates, initialCurrency, targetCurrency)
 //{
